@@ -10,10 +10,25 @@ function forLoop(array) {
 }
 
 
-function whileLoop (num) {
+function whileLoop(num) {
   let countdown = num
   while (countdown>0){
     console.log(--countdown)
   }
   return "done"
+}
+
+
+function doWhileLoop(array) {
+  var i = 0;
+
+  function incrementVariable() {
+    i++
+  }
+
+  do {
+    array.pop()
+  } while (array.length > 0 && incrementVariable());
+
+  return array
 }
