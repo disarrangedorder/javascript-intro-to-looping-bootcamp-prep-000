@@ -23,32 +23,15 @@ function whileLoop(num) {
 
 function doWhileLoop(array) {
   var i = 0;
+  
   function incrementVariable() {
-    i = i + 1;
+    if (i < 10) {i++}
   }
 
   do {
     array.pop()
     incrementVariable()
-  } while (array.length > 0 && i <10);
+  } while (array.length > 0 && incrementVariable());
 
   return array
 }
-
-
-/*
-instructions says to use incrementVariable as a condition but what's the point?
-the incrementVariable function doesn't seem to affect the ability to remove the elements/
-instructions:
-remove elements from the array until the array is empty or until incrementVariable() returns false
-(Your condition might look something like array.length > 0 && incrementVariable().) 
-
-
-
-var i = 0;
-
-function incrementVariable() {
-  i++
-}
-
-*/
