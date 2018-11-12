@@ -8,3 +8,5 @@ function forLoop(array) {
   }
   return array
 }
+
+forLoop()
