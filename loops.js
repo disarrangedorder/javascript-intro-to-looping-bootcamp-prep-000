@@ -23,7 +23,6 @@ function whileLoop(num) {
 
 function doWhileLoop(array) {
   var i = 0;
-
   function incrementVariable() {
     if (i < 10) {i++}
   }
